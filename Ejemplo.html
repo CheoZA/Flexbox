@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet"/>
+    <title>Flexbox</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        background-color: #F5F5F5;
+      }
+      body img{
+          width: 20em;
+      }
+      .contenedor {
+        background-color: #f5f5f5;
+        box-shadow: 0 0 10px #00000070;
+        margin-top: 10em;
+        display: flex;
+        /*width: 80%;*/
+        /*height: 60em;*/
+        /*flex-direction: row-reverse;*/
+        /*flex-wrap: wrap;
+        /*flex-flow: row-reverse wrap-reverse;*/
+        /*justify-content:space-between;*/                            /*descomentar width*/
+        /*align-items:stretch;   */                               /*descomentar height*/
+        /*align-content:flex-end;  */                               /*items,wrap, 60em*/
+      }
+      .Elemento1 {
+        order: 1;
+        /*flex-grow: 1; width: 30em;  */                                 
+        /*flex-shrink: 2; width: 10em;    */
+        /*flex-basis: 30em;  */
+        /*flex: 1 1 30em;*/
+        /*align-self: flex-start;    */                                     /*height 30em,align-items stretch*/
+               
+      }
+      .Elemento2 {
+        order: 2;
+      }
+      .Elemento3 {
+        order: 3;
+      }
+      .Elemento4 {
+        order: 4;
+      }
+      .Elemento5 {
+        order: 5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contenedor">
+      <img class="Elemento1" src="https://i.imgur.com/glvIC30.jpg" alt="Simón bebé"/>
+      <img class="Elemento2" src="https://i.imgur.com/W4bSVcJ.jpg?1" alt="Simón mediano" />
+      <img class="Elemento3" src="https://i.imgur.com/sEIP4lW.jpg?2" alt="Simón de un año" />
+      <!--elementos extra
+      <img class="Elemento4" src="https://i.imgur.com/GSxF1p7.jpg" alt="Simón chiflado"/>
+      <img class="Elemento5" src="https://i.imgur.com/zopo0DP.jpg" alt="Simón sorprendido" /> --> 
+    </div>
+  </body>
+</html>
